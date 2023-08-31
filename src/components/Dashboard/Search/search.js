@@ -1,0 +1,19 @@
+import React from "react";
+import "./styles.css";
+import SearchRoundedIcon from "@mui/icons-material/SearchRounded";
+
+function SearchComponent({ search, onChange }) {
+  return (
+    <div className="search-box">
+      <SearchRoundedIcon style={{ color: "var(--grey)", fontSize: "1.5rem" }} />
+      <input
+        type="text"
+        placeholder="Search"
+        value={search}
+        onChange={onChange}
+      />
+    </div>
+  );
+}
+
+export default SearchComponent;
